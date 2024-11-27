@@ -39,16 +39,16 @@ async function build() {
             '#000000': 'currentColor',
             '#0000F0': 'currentColor',
           },
-  //         template: ({ componentName, jsx }, { tpl }) => {
-  //           return tpl`
-  // const React = require('react');
-  // const { forwardRef } = require('react');
+          template: ({ componentName, jsx }, { tpl }) => {
+            return tpl`
+  const React = require('react');
+  const { forwardRef } = require('react');
 
-  // const ${componentName} = (props, ref) => ${jsx};
+  const ${componentName} = (props, ref) => ${jsx};
 
-  // module.exports = forwardRef(${componentName});
-  //             `;
-  //         }
+  module.exports = forwardRef(${componentName});
+              `;
+          }
         },
         { componentName }
       );

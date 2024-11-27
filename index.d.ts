@@ -1,7 +1,7 @@
 /// <reference types="react" />
 import { SVGProps } from "react";
 
-declare module "@your-scope/icons" {
+declare module "@brand-estonia/icons" {
   export const SocialBaidu: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const SocialFacebook: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const SocialFlickr: (props: SVGProps<SVGSVGElement>) => JSX.Element;

@@ -20,8 +20,7 @@ async function build() {
     files.map(async (file) => {
       const svg = await fs.readFile(file, 'utf8');
       const componentName = convertToPascalCase(path
-        .basename(file, '.svg')
-      );
+        .basename(file, '.svg'));
 
       // Convert SVG to React component
       const jsCode = await transform(
@@ -32,22 +31,18 @@ async function build() {
           dimensions: true,
           ref: true,
           icon: true,
-          exportType: 'named',
-          jsx: {
-            babelConfig: {
-              presets: [['@babel/preset-react', { runtime: 'automatic' }]]
-            }
-          }
         },
         { componentName }
       );
 
-      // Convert JSX to CommonJS
+      // Create the CommonJS component with proper exports
       const component = `
 const React = require('react');
 const { forwardRef } = require('react');
 
-${jsCode.replace('export { ForwardRef as ReactComponent };', 'module.exports = ForwardRef;')}
+${jsCode}
+
+module.exports = forwardRef(${componentName});
       `.trim();
 
       // Create the component file
@@ -61,6 +56,7 @@ ${jsCode.replace('export { ForwardRef as ReactComponent };', 'module.exports = F
   // Create index.js with all exports
   const indexContent = components
     .map(({ componentName, componentPath }) => {
+      // Use relative path from index.js to component
       const relativePath = './' + componentPath;
       return `exports.${componentName} = require('${relativePath}');`;
     })
@@ -73,7 +69,7 @@ ${jsCode.replace('export { ForwardRef as ReactComponent };', 'module.exports = F
     '/// <reference types="react" />',
     'import { SVGProps } from "react";',
     '',
-    'declare module "@your-scope/icons" {',
+    'declare module "@brand-estonia/icons" {',
     ...components.map(({ componentName }) =>
       `  export const ${componentName}: (props: SVGProps<SVGSVGElement>) => JSX.Element;`
     ),

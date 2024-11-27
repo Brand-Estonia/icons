@@ -1,5 +1,30 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const FAQ = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><g clipPath="url(#a)"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.799 8.7a3.3 3.3 0 016.413 1.1c0 2.2-3.3 3.3-3.3 3.3M12 17.5h.011M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11" /></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z" /></clipPath></defs></svg>;
-const ForwardRef = forwardRef(FAQ);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: [/*#__PURE__*/_reactJsxRuntime.jsx("g", {
+    clipPath: "url(#clip0_3983_622)",
+    children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M8.799 8.7C9.05761 7.96483 9.56807 7.34492 10.24 6.95005C10.9118 6.55518 11.7018 6.41083 12.4699 6.54258C13.238 6.67433 13.9347 7.07368 14.4366 7.66988C14.9385 8.26609 15.2132 9.02067 15.212 9.8C15.212 12 11.912 13.1 11.912 13.1M12 17.5H12.011M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z",
+      stroke: "#000",
+      strokeWidth: 2,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    })
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("defs", {
+    children: /*#__PURE__*/_reactJsxRuntime.jsx("clipPath", {
+      id: "clip0_3983_622",
+      children: /*#__PURE__*/_reactJsxRuntime.jsx("rect", {
+        width: 24,
+        height: 24,
+        fill: "white"
+      })
+    })
+  })]
+});

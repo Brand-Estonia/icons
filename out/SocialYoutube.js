@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const SocialYoutube = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.03 20H4.994A3.97 3.97 0 011 16V8c0-2.23 1.768-4 3.994-4h14.012A3.97 3.97 0 0123 8v8c0 2.23-1.768 4-3.994 4h-.982M10 12.984V16l6-4-6-4" /></svg>;
-const ForwardRef = forwardRef(SocialYoutube);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M14.0298 20H4.99405C2.76786 20 1 18.2295 1 16V8C1 5.77049 2.76786 4 4.99405 4H19.006C21.2321 4 23 5.77049 23 8V16C23 18.2295 21.2321 20 19.006 20H18.0238M10 12.9836V16L16 12L10 8",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

@@ -72,6 +72,7 @@ declare module "@your-scope/icons" {
   export const FAQLight: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const FAQ: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Favicon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const FileDuplicate: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const File1: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const File21: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const File2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -81,7 +82,6 @@ declare module "@your-scope/icons" {
   export const FileCheck: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const FileDownload2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const FileDownload: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-  export const FileDuplicate: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const FileError2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const FileError: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const FileHeart2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -134,8 +134,8 @@ declare module "@your-scope/icons" {
   export const Port: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Restaurant: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Rotate: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-  export const Search1: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const SearchError: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const Search1: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Search: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Settings: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Share: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -158,8 +158,8 @@ declare module "@your-scope/icons" {
   export const Users: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Visible: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Volume: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-  export const WarningFilled: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const WarningLight: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const WarningFilled: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Warning: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Water: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }

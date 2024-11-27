@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Water = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 17c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1M3 13c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1M3 9c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1" /></svg>;
-const ForwardRef = forwardRef(Water);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M3 17C4.5 17 4.5 16 6 16C7.5 16 7.5 17 9 17C10.5 17 10.5 16 12 16C13.5 16 13.5 17 15 17C16.5 17 16.5 16 18 16C19.5 16 19.5 17 21 17M3 13C4.5 13 4.5 12 6 12C7.5 12 7.5 13 9 13C10.5 13 10.5 12 12 12C13.5 12 13.5 13 15 13C16.5 13 16.5 12 18 12C19.5 12 19.5 13 21 13M3 9C4.5 9 4.5 8 6 8C7.5 8 7.5 9 9 9C10.5 9 10.5 8 12 8C13.5 8 13.5 9 15 9C16.5 9 16.5 8 18 8C19.5 8 19.5 9 21 9",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

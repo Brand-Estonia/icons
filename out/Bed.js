@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Bed = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 16v-3c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v6m18-3H6m15 0v3M4 8.46V8c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v3-2.86M14.32 6H18c1.1 0 2 .9 2 2v3" /></svg>;
-const ForwardRef = forwardRef(Bed);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M21 16V13C21 11.9 20.1 11 19 11H5C3.9 11 3 11.9 3 13V19M21 16H6M21 16V19M4 8.46V8C4 6.9 4.9 6 6 6H10C11.1 6 12 6.9 12 8V11V8.14M14.32 6H18C19.1 6 20 6.9 20 8V11",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

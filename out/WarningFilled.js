@@ -1,5 +1,17 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const WarningFilled = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path fill="currentColor" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1m1 5a1 1 0 10-2 0v6.5a1 1 0 102 0zm0 10.5a1 1 0 10-2 0V18a1 1 0 102 0z" /></svg>;
-const ForwardRef = forwardRef(WarningFilled);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 0.999999C5.92487 0.999999 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 0.999999ZM13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6L11 12.5C11 13.0523 11.4477 13.5 12 13.5C12.5523 13.5 13 13.0523 13 12.5L13 6ZM13 16.5C13 15.9477 12.5523 15.5 12 15.5C11.4477 15.5 11 15.9477 11 16.5L11 18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18L13 16.5Z",
+    fill: "#000"
+  })
+});

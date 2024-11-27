@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const SocialXing = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 16H2.5l4-7L4 5h4l2.5 4-2 3.5M19 8l-3.5 6 4.5 8h-4l-4.5-8 7-12h4L21 4.5" /></svg>;
-const ForwardRef = forwardRef(SocialXing);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M6 16H2.5L6.5 9L4 5H8L10.5 9L8.5 12.4999M19 7.99991L15.5 14L20 22H16L11.5 14L18.5 2L22.5 1.99991L21 4.49991",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

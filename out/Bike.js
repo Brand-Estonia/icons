@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Bike = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.67 15.41A4 4 0 016 21c-2.21 0-4-1.79-4-4s1.79-4 4-4c.5 0 .98.09 1.43.26M12 14v-3l5-1-3-4-3 2m7 9h-5m-7-7h3l-3 7m8.86-2.48C15.59 13.59 16.73 13 18 13c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4M12 3a1 1 0 11-2 0 1 1 0 012 0" /></svg>;
-const ForwardRef = forwardRef(Bike);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M9.67 15.41C9.88 15.9 10 16.44 10 17C10 19.21 8.21 21 6 21C3.79 21 2 19.21 2 17C2 14.79 3.79 13 6 13C6.5 13 6.98 13.09 7.43 13.26M12 14V11L17 10L14 6L11 8M18 17H13M6 10H9L6 17M14.86 14.52C15.59 13.59 16.73 13 18 13C20.21 13 22 14.79 22 17C22 19.21 20.21 21 18 21C15.79 21 14 19.21 14 17M12 3C12 3.55228 11.5523 4 11 4C10.4477 4 10 3.55228 10 3C10 2.44772 10.4477 2 11 2C11.5523 2 12 2.44772 12 3Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const SocialFacebook = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 17.982V14h2.975l.82-4H13V7c0-.643.344-1 1-1h3.5V2H14c-3 0-5 2-5 5.125V10H6v4h3v8h4" /></svg>;
-const ForwardRef = forwardRef(SocialFacebook);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M13 17.9821V14H15.9754L16.7951 10H13V7C13 6.35714 13.3443 6 14 6H17.5V2H14C11 2 9.00004 4 9.00004 7.125V10H6L6 14H9.00004L9 22H13",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

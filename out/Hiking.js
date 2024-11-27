@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Hiking = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m11 13 4 2v6m4-10h-4l-3-3-4 13M19 9v12M9.34 6.81l-1.71 5.34M5 11l1.19-3.37M14 4a1 1 0 11-2 0 1 1 0 012 0" /></svg>;
-const ForwardRef = forwardRef(Hiking);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M11 13L15 15V21M19 11H15L12 8L8 21M19 9V21M9.34 6.81L7.63 12.15M5 11L6.19 7.63M14 4C14 4.55228 13.5523 5 13 5C12.4477 5 12 4.55228 12 4C12 3.44772 12.4477 3 13 3C13.5523 3 14 3.44772 14 4Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

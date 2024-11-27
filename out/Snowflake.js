@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Snowflake = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.066 4 12 5 9.934 4M12 15v7m-2.066-2L12 19l2.066 1m6.901-12.96-6.281 3.47c-.713.39-.62 1.49-.62 1.49 0 1.1-.93 2-2.066 2s-2.066-.9-2.066-2c0-.79.465-1.47 1.147-1.79 0 0 .919-.4.919-1.21V2m8.203 7.77L18.28 8.53l-.124-2.24m-8.843 7.2-6.28 3.47m.764-2.73 1.921 1.24.134 2.24m3.461-7.2-6.28-3.47m.764 2.73 1.921-1.24.134-2.24m8.213 7.2 6.281 3.47m-.764-2.73-1.922 1.24-.134 2.24" /></svg>;
-const ForwardRef = forwardRef(Snowflake);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M14.0661 4L12 5L9.93391 4M12 15V22M9.93391 20L12 19L14.0661 20M20.967 7.04L14.686 10.51C13.9732 10.9 14.0661 12 14.0661 12C14.0661 13.1 13.1364 14 12 14C10.8637 14 9.93391 13.1 9.93391 12C9.93391 11.21 10.3988 10.53 11.0806 10.21C11.0806 10.21 12 9.81 12 9V2M20.2025 9.77L18.281 8.53L18.157 6.29M9.31407 13.49L3.03308 16.96M3.79754 14.23L5.71903 15.47L5.85333 17.71M9.31407 10.51L3.03308 7.04M3.79754 9.77L5.71903 8.53L5.85333 6.29M14.0661 13.49L20.3471 16.96M19.5827 14.23L17.6612 15.47L17.5269 17.71",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

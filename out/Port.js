@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Port = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 11h6m-3-3v12m-8-5s2 6 8 6 8-6 8-6m-1.83 0H21v2.83M5.83 15H3v2.83M14 5c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2" /></svg>;
-const ForwardRef = forwardRef(Port);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M9 11H15M12 8V20M4 15C4 15 6 21 12 21C18 21 20 15 20 15M18.17 15H21V17.83M5.83 15H3V17.83M14 5C14 6.1 13.1 7 12 7C10.9 7 10 6.1 10 5C10 3.9 10.9 3 12 3",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

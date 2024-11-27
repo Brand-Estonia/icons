@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const SocialInstagram = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.768 21h-7.5A3.247 3.247 0 013 17.732V6.268A3.247 3.247 0 016.268 3h11.464A3.247 3.247 0 0121 6.268v11.464A3.247 3.247 0 0117.732 21h-.696M8 11.245c.42-2.133 2.52-3.59 4.725-3.174 2.153.416 3.623 2.498 3.203 4.684-.42 2.133-2.52 3.59-4.725 3.174a4.23 4.23 0 01-2.468-1.51M17 7h.01" /></svg>;
-const ForwardRef = forwardRef(SocialInstagram);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M13.7679 21H6.26786C4.44643 21 3 19.5536 3 17.7321V6.26786C3 4.44643 4.44643 3 6.26786 3H17.7321C19.5536 3 21 4.44643 21 6.26786V17.7321C21 19.5536 19.5536 21 17.7321 21H17.0357M8 11.2454C8.42004 9.11188 10.5202 7.65481 12.7254 8.07112C14.8781 8.48742 16.3483 10.569 15.9282 12.7546C15.5082 14.8881 13.408 16.3452 11.2028 15.9289C10.2052 15.7207 9.36513 15.2003 8.73507 14.4198M17 7H17.01",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

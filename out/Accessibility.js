@@ -1,5 +1,17 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Accessibility = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path fill="currentColor" d="M10 4a2 2 0 114 0 2 2 0 01-4 0M3.044 6.706a1 1 0 011.25-.662c2.231.687 3.398.88 5.731.943.712.016 1.253.02 1.966.013a58 58 0 001.966-.05c2.159-.096 3.694-.34 5.777-.914a1 1 0 11.532 1.928c-1.91.527-3.42.798-5.266.93V21a1 1 0 11-2 0v-5h-2v5a1 1 0 11-2 0V8.948c-1.931-.1-3.219-.353-5.294-.992a1 1 0 01-.662-1.25" /></svg>;
-const ForwardRef = forwardRef(Accessibility);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10 4C10 2.89543 10.8955 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8955 6 10 5.10457 10 4ZM3.0443 6.70574C3.20681 6.1779 3.76645 5.88176 4.29429 6.04428C6.52518 6.73116 7.69247 6.92318 10.0252 6.98683C10.7369 7.00319 11.2782 7.00683 11.9905 7.00005C12.7073 6.99322 13.2413 6.97983 13.9572 6.95074C16.1155 6.85353 17.6511 6.61035 19.7342 6.03597C20.2666 5.88917 20.8172 6.20177 20.964 6.73419C21.1108 7.26661 20.7982 7.81722 20.2658 7.96403C18.3563 8.49054 16.8462 8.76163 15 8.89377V21C15 21.5523 14.5523 22 14 22C13.4477 22 13 21.5523 13 21V16H11V21C11 21.5523 10.5523 22 10 22C9.44774 22 9.00002 21.5523 9.00002 21V8.94848C7.06902 8.84728 5.78143 8.59481 3.70576 7.95572C3.17793 7.79321 2.88178 7.23357 3.0443 6.70574Z",
+    fill: "#000"
+  })
+});

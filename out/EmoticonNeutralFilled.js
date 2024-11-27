@@ -1,5 +1,22 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const EmoticonNeutralFilled = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><circle cx={12} cy={12} r={11} fill="currentColor" /><path stroke="currentColor" strokeLinecap="round" strokeWidth={2} d="M8 16h8m-8-6V8m8 2V8" /></svg>;
-const ForwardRef = forwardRef(EmoticonNeutralFilled);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: [/*#__PURE__*/_reactJsxRuntime.jsx("circle", {
+    cx: 12,
+    cy: 12,
+    r: 11,
+    fill: "#000"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M8 16H16M8 10V8M16 10V8",
+    stroke: "white",
+    strokeWidth: 2,
+    strokeLinecap: "round"
+  })]
+});

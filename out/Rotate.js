@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Rotate = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5a8 8 0 00-7.196 11.5M18 18.292a7.95 7.95 0 001.985-4.792m-1.37-5c.319.467.589.97.804 1.5M7 19.245A7.97 7.97 0 0012 21a8 8 0 003-.581M10.98 2l3.331 3.332-3.331 3.331" /></svg>;
-const ForwardRef = forwardRef(Rotate);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M12 5C7.58172 5 4 8.58172 4 13C4 14.2552 4.28906 15.4428 4.80423 16.5M18 18.2916C18.382 17.8589 18.7179 17.3844 19 16.876C19.5611 15.8649 19.9094 14.7194 19.9846 13.5M18.6153 8.5C18.9336 8.96694 19.2037 9.46932 19.4185 10M7 19.2454C8.3696 20.3433 10.1081 21 12 21C12.7747 21 13.5236 20.8899 14.232 20.6845C14.4938 20.6086 14.75 20.5197 15 20.4185M10.9797 2L14.3114 5.33172L10.9797 8.66345",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

@@ -1,5 +1,66 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Grid = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 2H2v4h4zm8 0h-4v4h4zm8 0h-4v4h4zM6 10H2v4h4zm8 0h-4v4h4zm8 0h-4v4h4zM6 18H2v4h4zm8 0h-4v4h4zm8 0h-4v4h4z" /></svg>;
-const ForwardRef = forwardRef(Grid);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: [/*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M6 2H2V6H6V2Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M14 2H10V6H14V2Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M22 2H18V6H22V2Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M6 10H2V14H6V10Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M14 10H10V14H14V10Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M22 10H18V14H22V10Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M6 18H2V22H6V18Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M14 18H10V22H14V18Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M22 18H18V22H22V18Z",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })]
+});

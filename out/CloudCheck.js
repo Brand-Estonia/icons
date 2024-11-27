@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const CloudCheck = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.05 19c2.734 0 4.95-2.159 4.95-4.821 0-2.511-1.97-4.574-4.488-4.801C17.997 6.328 15.278 4 12 4S6.003 6.327 5.488 9.378C2.97 9.605 1 11.668 1 14.178 1 16.842 3.216 19 5.95 19h7.7M9.5 13l2 2 3.5-3.5" /></svg>;
-const ForwardRef = forwardRef(CloudCheck);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M18.05 19C20.7838 19 23 16.8414 23 14.1786C23 11.6676 21.0293 9.60496 18.5123 9.3779C17.9974 6.32728 15.2777 4 12 4C8.72227 4 6.0026 6.32728 5.48772 9.3779C2.97066 9.60496 1 11.6676 1 14.1786C1 16.8414 3.21619 19 5.95 19C8.55103 19 10.7039 19 13.1 19H13.65M9.5 13L11.5 15L15 11.5",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

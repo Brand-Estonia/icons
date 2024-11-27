@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const SocialLinkedin = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6.199 17.69v-7.442c0-.912-.751-1.644-1.684-1.644h-.83C2.75 8.604 2 9.342 2 10.248v10.746h4.205m7.538-3.304v-1.98c0-3.858 5.07-4.17 5.07 0v3.63c0 .916.75 1.66 1.678 1.66h.83C22.25 21 23 20.262 23 19.345v-5.888c0-6.509-7.499-6.274-9.263-3.07v-.128c0-.912-.745-1.65-1.672-1.65h-.825c-.928 0-1.673.738-1.673 1.65V21h4.176M4.093 6.093c-1.15 0-2.082-.917-2.082-2.047C2.01 2.917 2.944 2 4.093 2c1.15 0 2.082.917 2.082 2.046" /></svg>;
-const ForwardRef = forwardRef(SocialLinkedin);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M6.1989 17.6898V10.2476C6.1989 9.33614 5.44786 8.60354 4.51478 8.60354H3.68409C2.751 8.60354 2 9.34173 2 10.2476V20.9944H6.20456M13.7431 17.6897V15.7104C13.7431 11.8523 18.8125 11.5392 18.8125 15.7104V19.3393C18.8125 20.2563 19.5635 21 20.4909 21H21.3216C22.249 21 23 20.2619 23 19.3449V13.457C23 6.9485 15.5012 7.18335 13.7374 10.3873V10.2587C13.7374 9.34728 12.9921 8.60909 12.0647 8.60909H11.2397C10.3123 8.60909 9.56696 9.34728 9.56696 10.2587V21H13.7431M4.09312 6.0929C2.94383 6.0929 2.01072 5.17594 2.01072 4.04645C2.01072 2.91696 2.94383 2 4.09312 2C5.24241 2 6.17548 2.91696 6.17548 4.04645",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

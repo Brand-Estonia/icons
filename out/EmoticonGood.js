@@ -1,5 +1,30 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const EmoticonGood = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><g clipPath="url(#a)"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7.285 15a5.002 5.002 0 009.43 0M18 21.221A10.95 10.95 0 0112 23C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11a10.95 10.95 0 01-1.779 6M8 10V8m8 2V8" /></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z" /></clipPath></defs></svg>;
-const ForwardRef = forwardRef(EmoticonGood);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsxs("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: [/*#__PURE__*/_reactJsxRuntime.jsx("g", {
+    clipPath: "url(#clip0_6769_104)",
+    children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+      d: "M7.28467 15C7.97106 16.942 9.82313 18.3333 12.0002 18.3333C14.1772 18.3333 16.0293 16.942 16.7156 15M18 21.2211C16.2744 22.3462 14.2136 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 14.2136 22.3462 16.2744 21.2211 18M8 10V8M16 10V8",
+      stroke: "#000",
+      strokeWidth: 2,
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    })
+  }), /*#__PURE__*/_reactJsxRuntime.jsx("defs", {
+    children: /*#__PURE__*/_reactJsxRuntime.jsx("clipPath", {
+      id: "clip0_6769_104",
+      children: /*#__PURE__*/_reactJsxRuntime.jsx("rect", {
+        width: 24,
+        height: 24,
+        fill: "white"
+      })
+    })
+  })]
+});

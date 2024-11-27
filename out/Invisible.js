@@ -1,5 +1,18 @@
-import * as React from "react";
-import { forwardRef } from "react";
-const Invisible = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.723 5.092A9 9 0 0112 5c5.186 0 8.589 4.505 9.732 6.287.138.215.207.323.246.49.03.125.03.322 0 .447-.039.166-.108.274-.248.492a17.5 17.5 0 01-1.384 1.865M6.64 6.715c-2.196 1.467-3.687 3.504-4.37 4.57-.14.217-.21.325-.248.492-.03.124-.03.321 0 .446.039.167.108.274.246.49C3.411 14.495 6.814 19 12 19c2.091 0 3.892-.732 5.372-1.723M2.858 3l18.284 18M9.845 9.879A2.97 2.97 0 008.953 12c0 1.657 1.364 3 3.047 3 .841 0 1.603-.336 2.155-.879" /></svg>;
-const ForwardRef = forwardRef(Invisible);
-export { ForwardRef as ReactComponent };
+const React = require('react');
+const { forwardRef } = require('react');
+
+var _reactJsxRuntime = require("react/jsx-runtime");
+/*#__PURE__*/_reactJsxRuntime.jsx("svg", {
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  children: /*#__PURE__*/_reactJsxRuntime.jsx("path", {
+    d: "M10.7226 5.09232C11.1355 5.03223 11.5614 5 12 5C17.1858 5 20.5887 9.50484 21.7319 11.2868C21.8703 11.5025 21.9395 11.6103 21.9782 11.7767C22.0073 11.9016 22.0073 12.0987 21.9782 12.2236C21.9394 12.3899 21.8697 12.4985 21.7304 12.7156C21.4258 13.1901 20.9614 13.8571 20.3461 14.5805M6.64038 6.71504C4.44409 8.1817 2.95305 10.2194 2.26905 11.2853C2.13006 11.5019 2.06057 11.6102 2.02183 11.7765C1.99273 11.9014 1.99272 12.0984 2.0218 12.2234C2.06052 12.3897 2.1297 12.4975 2.26806 12.7132C3.41128 14.4952 6.81418 19 12 19C14.091 19 15.8921 18.2676 17.3721 17.2766M2.85753 3L21.1425 21M9.8451 9.87868C9.29361 10.4216 8.95251 11.1716 8.95251 12C8.95251 13.6569 10.3169 15 12 15C12.8415 15 13.6034 14.6642 14.1549 14.1213",
+    stroke: "#000",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })
+});

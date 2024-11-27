@@ -1,8 +1,8 @@
 {
   "name": "@brand-estonia/icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brand Estonia icons",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "exports": {
     ".": {
@@ -26,10 +26,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@types/react": "^18.2.0",
     "fast-glob": "^3.3.2"
   },
-  "dependencies": {
-    "@svgr/core": "^8.1.0",
-    "@svgr/plugin-jsx": "^8.1.0"
+  "peerDependencies": {
+    "react": ">=16.8.0"
   }
 }

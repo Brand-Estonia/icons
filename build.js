@@ -2,14 +2,15 @@ const fs = require('fs/promises');
 const fg = require('fast-glob');
 const path = require('path');
 const { transform } = require('@svgr/core');
+const babel = require('@babel/core');
 
 function convertToPascalCase(str) {
   const name = str
-  .replace(/[^a-zA-Z0-9]/g, ' ') // Replace non-alphanumeric chars with space
-  .replace(/\s+(\w)/g, (_, c) => c.toUpperCase()) // Capitalize first letter after space
-  .replace(/\s/g, ''); // Remove spaces
+    .replace(/[^a-zA-Z0-9]/g, ' ') // Replace non-alphanumeric chars with space
+    .replace(/\s+(\w)/g, (_, c) => c.toUpperCase()) // Capitalize first letter after space
+    .replace(/\s/g, ''); // Remove spaces
 
- return str.charAt(0).toUpperCase() + name.slice(1);
+  return str.charAt(0).toUpperCase() + name.slice(1);
 }
 
 async function build() {
@@ -22,17 +23,17 @@ async function build() {
       const componentName = convertToPascalCase(path
         .basename(file, '.svg'))
 
-         // Convert SVG to React component
-         const jsCode = await transform(
-          svg,
-          {
-            plugins: ['@svgr/plugin-jsx'],
-            typescript: false,
-            dimensions: true,
-            ref: true,
-            icon: true,
-            template: ({ componentName, jsx }, { tpl }) => {
-              return tpl`
+      // Convert SVG to React component
+      let jsCode = await transform(
+        svg,
+        {
+          plugins: ['@svgr/plugin-jsx'],
+          typescript: false,
+          dimensions: true,
+          ref: true,
+          icon: true,
+          template: ({ componentName, jsx }, { tpl }) => {
+            return tpl`
   const React = require('react');
   const { forwardRef } = require('react');
 
@@ -40,16 +41,27 @@ async function build() {
 
   module.exports = forwardRef(${componentName});
               `;
-            }
-          },
-          { componentName }
-        );
+          }
+        },
+        { componentName }
+      );
 
-        // Create the component file
-        const componentPath = `out/${componentName}.js`;
-        await fs.writeFile(componentPath, jsCode);
+      // Transform JSX to plain JavaScript
+      const babelResult = babel.transformSync(jsCode, {
+        presets: [
+          ['@babel/preset-react', {
+            runtime: 'classic',
+            development: false
+          }]
+        ]
+      });
+      jsCode = babelResult.code;
 
-        return { componentName, componentPath };
+      // Create the component file
+      const componentPath = `out/${componentName}.js`;
+      await fs.writeFile(componentPath, jsCode);
+
+      return { componentName, componentPath };
     })
   );
 

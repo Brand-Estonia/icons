@@ -20,36 +20,36 @@ async function build() {
     files.map(async (file) => {
       const svg = await fs.readFile(file, 'utf8');
       const componentName = convertToPascalCase(path
-        .basename(file, '.svg'));
+        .basename(file, '.svg'))
 
-      // Convert SVG to React component
-      const jsCode = await transform(
-        svg,
-        {
-          plugins: ['@svgr/plugin-jsx'],
-          typescript: false,
-          dimensions: true,
-          ref: true,
-          icon: true,
-        },
-        { componentName }
-      );
+         // Convert SVG to React component
+         const jsCode = await transform(
+          svg,
+          {
+            plugins: ['@svgr/plugin-jsx'],
+            typescript: false,
+            dimensions: true,
+            ref: true,
+            icon: true,
+            template: ({ componentName, jsx }, { tpl }) => {
+              return tpl`
+  const React = require('react');
+  const { forwardRef } = require('react');
 
-      // Create the CommonJS component with proper exports
-      const component = `
-const React = require('react');
-const { forwardRef } = require('react');
+  const ${componentName} = (props, ref) => ${jsx};
 
-${jsCode}
+  module.exports = forwardRef(${componentName});
+              `;
+            }
+          },
+          { componentName }
+        );
 
-module.exports = forwardRef(${componentName});
-      `.trim();
+        // Create the component file
+        const componentPath = `out/${componentName}.js`;
+        await fs.writeFile(componentPath, jsCode);
 
-      // Create the component file
-      const componentPath = `out/${componentName}.js`;
-      await fs.writeFile(componentPath, component);
-
-      return { componentName, componentPath };
+        return { componentName, componentPath };
     })
   );
 

@@ -1,8 +1,6 @@
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-const React = require('react');
-const {
-  forwardRef
-} = require('react');
+import * as React from "react";
+import { forwardRef } from "react";
 const EmoticonNeutralFilled = (props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
   width: "1em",
   height: "1em",
@@ -14,11 +12,12 @@ const EmoticonNeutralFilled = (props, ref) => /*#__PURE__*/React.createElement("
   cx: 12,
   cy: 12,
   r: 11,
-  fill: "#000"
+  fill: "currentColor"
 }), /*#__PURE__*/React.createElement("path", {
   d: "M8 16H16M8 10V8M16 10V8",
   stroke: "white",
   strokeWidth: 2,
   strokeLinecap: "round"
 }));
-module.exports = forwardRef(EmoticonNeutralFilled);
+const ForwardRef = /*#__PURE__*/forwardRef(EmoticonNeutralFilled);
+export default ForwardRef;

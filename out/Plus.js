@@ -1,8 +1,6 @@
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-const React = require('react');
-const {
-  forwardRef
-} = require('react');
+import * as React from "react";
+import { forwardRef } from "react";
 const Plus = (props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
   width: "1em",
   height: "1em",
@@ -12,9 +10,10 @@ const Plus = (props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
   ref: ref
 }, props), /*#__PURE__*/React.createElement("path", {
   d: "M12 4L12 20M4 12L12 12M16 12H20",
-  stroke: "#000",
+  stroke: "currentColor",
   strokeWidth: 2,
   strokeLinecap: "round",
   strokeLinejoin: "round"
 }));
-module.exports = forwardRef(Plus);
+const ForwardRef = /*#__PURE__*/forwardRef(Plus);
+export default ForwardRef;

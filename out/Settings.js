@@ -1,0 +1,5 @@
+import * as React from "react";
+import { forwardRef } from "react";
+const Settings = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15a3 3 0 10-2.599-1.5m9.554-5.955.054-.054a1.819 1.819 0 10-2.573-2.573l-.054.055a1.5 1.5 0 01-1.655.3 1.5 1.5 0 01-.909-1.373v-.082a1.818 1.818 0 00-3.636 0v.155a1.5 1.5 0 01-.91 1.372H9.2a1.5 1.5 0 01-1.655-.3l-.054-.054a1.818 1.818 0 10-2.573 2.573l.055.054a1.5 1.5 0 01.3 1.655 1.5 1.5 0 01-1.373.982h-.082a1.818 1.818 0 000 3.636h.155a1.5 1.5 0 011.372.909 1.5 1.5 0 01-.3 1.654l-.054.055a1.819 1.819 0 102.573 2.573l.054-.055a1.5 1.5 0 011.655-.3 1.5 1.5 0 01.982 1.373v.082a1.818 1.818 0 003.636 0v-.155a1.5 1.5 0 01.909-1.373 1.5 1.5 0 011.654.3l.055.055a1.82 1.82 0 102.573-2.573l-.055-.054a1.5 1.5 0 01-.3-1.655 1.5 1.5 0 011.373-.909h.082a1.818 1.818 0 000-3.636h-.155" /></svg>;
+const ForwardRef = forwardRef(Settings);
+export { ForwardRef as ReactComponent };

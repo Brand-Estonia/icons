@@ -1,0 +1,5 @@
+import * as React from "react";
+import { forwardRef } from "react";
+const SocialTiktok = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.57 9.273c-1.3 0-2.57.373-3.65 1.072a6.4 6.4 0 00-2.42 2.856 6.2 6.2 0 00-.374 3.677 6.3 6.3 0 001.798 3.258 6.64 6.64 0 003.364 1.742 6.77 6.77 0 003.795-.362c1.2-.482 2.353-1.298 3.075-2.344a6.2 6.2 0 001.107-3.536V8.41c1.372 1.086 2.964 1.777 4.735 1.773V6.545c-1.284 0-2.516-.348-3.424-1.228S16.265 3.244 16.265 2h-3.74v13.636a2.8 2.8 0 01-.502 1.589c-.326.47-.788.835-1.329 1.05s-1.134.271-1.707.16a3 3 0 01-1.511-.786 2.84 2.84 0 01-.807-1.466 2.8 2.8 0 01.17-1.654 2.9 2.9 0 011.089-1.283 3.03 3.03 0 011.641-.482" /></svg>;
+const ForwardRef = forwardRef(SocialTiktok);
+export { ForwardRef as ReactComponent };

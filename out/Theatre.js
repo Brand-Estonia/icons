@@ -1,0 +1,5 @@
+import * as React from "react";
+import { forwardRef } from "react";
+const Theatre = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.97 18.198a5 5 0 01-.287.637c-.74 1.402-2.091 2.528-3.827 2.98-3.128.822-6.285-.853-7.054-3.734l-1.815-6.82 1.973-.03a16.7 16.7 0 003.749-.49m-.306 2.803c-.937 2.616-3.68 2.606-3.68 2.606m8.415 1.421s-.72-.96-2.516-.48c-1.795.48-1.943 1.656-1.943 1.656M22.014 5.783v4.262c0 2.98-2.625 5.4-5.85 5.4-3.237 0-5.851-2.42-5.851-5.4V2.98l1.914.48c2.575.637 5.298.637 7.873 0l1.913-.48m-7.468 4.174c-3.255 0-4.242 1.431-4.242 1.431m7.39-1.43c2.545 0 4.123 1.342 4.123 1.342m-7.951 2.4s.453 1.108 2.308 1.108 2.309-1.107 2.309-1.107" /></svg>;
+const ForwardRef = forwardRef(Theatre);
+export { ForwardRef as ReactComponent };

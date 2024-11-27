@@ -1,0 +1,5 @@
+import * as React from "react";
+import { forwardRef } from "react";
+const Email = (props, ref) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="1em" height="1em" ref={ref} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m2 7 2 1.4 6.165 4.315c.661.463.992.695 1.351.784a2 2 0 00.968 0c.36-.09.69-.32 1.351-.784l4.068-2.857.597-.42 1.437-1.01L21.971 7l.002.082M22 12v3.2c0 1.68 0 2.52-.327 3.162a3 3 0 01-1.311 1.311C19.72 20 18.88 20 17.2 20H6.8c-1.68 0-2.52 0-3.162-.327a3 3 0 01-1.311-1.311C2 17.72 2 16.88 2 15.2V8.8c0-1.68 0-2.52.327-3.162a3 3 0 011.311-1.311C4.28 4 5.12 4 6.8 4h10.4c1.68 0 2.52 0 3.162.327a3 3 0 011.311 1.311c.158.31.24.667.282 1.143" /></svg>;
+const ForwardRef = forwardRef(Email);
+export { ForwardRef as ReactComponent };

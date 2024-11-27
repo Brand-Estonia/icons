@@ -1,6 +1,8 @@
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-import * as React from "react";
-import { forwardRef } from "react";
+const React = require('react');
+const {
+  forwardRef
+} = require('react');
 const DotMenu = (props, ref) => /*#__PURE__*/React.createElement("svg", _extends({
   width: "1em",
   height: "1em",
@@ -18,5 +20,4 @@ const DotMenu = (props, ref) => /*#__PURE__*/React.createElement("svg", _extends
   d: "M12 21C13.1046 21 14 20.1046 14 19C14 17.8954 13.1046 17 12 17C10.8954 17 10 17.8954 10 19C10 20.1046 10.8954 21 12 21Z",
   fill: "currentColor"
 }));
-const ForwardRef = /*#__PURE__*/forwardRef(DotMenu);
-export default ForwardRef;
+module.exports = forwardRef(DotMenu);

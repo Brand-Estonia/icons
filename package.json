@@ -1,0 +1,27 @@
+{
+  "name": "@estonia/icons",
+  "version": "1.0.0",
+  "description": "Brand Estonia icons",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "out"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "icons",
+    "svg"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "fast-glob": "^3.3.2"
+  }
+}

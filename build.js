@@ -97,6 +97,12 @@ async function build() {
   ].join('\n');
 
   await fs.writeFile('index.d.ts', typeDefinitions);
+  // write the list of components to Readme end
+  const readmeContent = components
+    .map(({ componentName }) => `- ${componentName}`)
+    .join('\n');
+
+  await fs.appendFile('README.md', readmeContent);
 
   console.log(`Generated ${components.length} icon components with type definitions`);
 }

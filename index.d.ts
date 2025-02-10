@@ -106,6 +106,7 @@ declare module "@brand-estonia/icons" {
   export const Image: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const InfoFilled: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const InfoLight: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const Info2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Info: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Invisible: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Key: (props: SVGProps<SVGSVGElement>) => JSX.Element;

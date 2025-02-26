@@ -171,3 +171,4 @@ export type IconName =
   | 'FaceId'
   | 'RSquare'
 ;
+export default IconName;

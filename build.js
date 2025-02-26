@@ -79,19 +79,20 @@ async function build() {
       .map(({ componentName }) => `  | '${componentName}'`)
       .join('\n'),
     ';',
+    'export default IconName;',
     ''
   ].join('\n');
 
   await fs.writeFile('types.ts', iconTypes);
 
   // Create index.js with all exports
-  const indexContent = components
-    .map(({ componentName, componentPath }) => {
-      // Use relative path from index.js to component
+  const indexContent = [
+    // Export all components
+    ...components.map(({ componentName, componentPath }) => {
       const relativePath = './' + componentPath;
       return `exports.${componentName} = require('${relativePath}');`;
     })
-    .join('\n');
+  ].join('\n');
 
   await fs.writeFile('index.js', indexContent);
 
@@ -100,20 +101,18 @@ async function build() {
     '/// <reference types="react" />',
     'import { SVGProps } from "react";',
     '',
-    'declare module "@brand-estonia/icons" {',
-    '  export type IconName =',
-    ...components.map(({ componentName }) => `    | '${componentName}'`),
+    // Export IconName type directly
+    'export type IconName =',
+    ...components.map(({ componentName }) => `  | '${componentName}'`),
     '',
+    // Export component declarations
     ...components.map(({ componentName }) =>
-      `  export const ${componentName}: (props: SVGProps<SVGSVGElement>) => JSX.Element;`
+      `export const ${componentName}: (props: SVGProps<SVGSVGElement>) => JSX.Element;`
     ),
-    '}',
     ''
   ].join('\n');
 
   await fs.writeFile('index.d.ts', typeDefinitions);
-
-
 
   // write the list of components to Readme end
   const readmeContent = components

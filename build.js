@@ -72,6 +72,18 @@ async function build() {
     })
   );
 
+  // Create types file with icon names
+  const iconTypes = [
+    'export type IconName =',
+    components
+      .map(({ componentName }) => `  | '${componentName}'`)
+      .join('\n'),
+    ';',
+    ''
+  ].join('\n');
+
+  await fs.writeFile('types.ts', iconTypes);
+
   // Create index.js with all exports
   const indexContent = components
     .map(({ componentName, componentPath }) => {
@@ -89,6 +101,9 @@ async function build() {
     'import { SVGProps } from "react";',
     '',
     'declare module "@brand-estonia/icons" {',
+    '  export type IconName =',
+    ...components.map(({ componentName }) => `    | '${componentName}'`),
+    '',
     ...components.map(({ componentName }) =>
       `  export const ${componentName}: (props: SVGProps<SVGSVGElement>) => JSX.Element;`
     ),
@@ -97,6 +112,9 @@ async function build() {
   ].join('\n');
 
   await fs.writeFile('index.d.ts', typeDefinitions);
+
+
+
   // write the list of components to Readme end
   const readmeContent = components
     .map(({ componentName }) => `- ${componentName}`)

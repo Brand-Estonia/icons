@@ -107,6 +107,8 @@ declare module "@brand-estonia/icons" {
   export const InfoFilled: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const InfoLight: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Info2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const Info2Filled: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const Info2: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Info: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Invisible: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Key: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -123,6 +125,7 @@ declare module "@brand-estonia/icons" {
   export const LogOut: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Map: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Minus: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const Moon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Mute: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Nearby: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Notification: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -134,6 +137,7 @@ declare module "@brand-estonia/icons" {
   export const Plus: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Port: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Restaurant: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const Rocket: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Rotate: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const SearchError: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Search1: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -163,4 +167,10 @@ declare module "@brand-estonia/icons" {
   export const WarningFilled: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Warning: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   export const Water: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const ArrowSquareDown: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const ArrowSquareLeft: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const ArrowSquareRight: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const ArrowSquareUp: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const FaceId: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  export const RSquare: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
